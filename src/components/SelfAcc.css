@@ -1,13 +1,12 @@
 .myAccord{
     width: 100%;
-    background-color: rgb(70, 68, 68);
     padding: 1rem 2rem;
 }
 .myAccord .title{
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(154, 223, 160);
+    background: linear-gradient(90deg, #33B77B 0%, #049A87 54.41%, #0B5474 97.04%);
 }
 
 .details{
