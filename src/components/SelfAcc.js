@@ -68,18 +68,7 @@ const SelfAcc = () => {
                 {allAcc.two? 
                 <motion.div 
                     className='details'
-                    animate={{
-                        scale:1,
-                        marginRight:"0vw"
-                    }}
-                    initial={{
-                        scale:0,
-                        marginRight:"-100vh"
-                    }}
-                    transition={{
-                        type:"spring",
-                        stiffness:"100"
-                    }}
+                    
                 >
                     <Part/>
                       
@@ -95,20 +84,7 @@ const SelfAcc = () => {
              
                 {allAcc.three? 
                 <motion.div 
-                    className='details'
-                    animate={{
-                        scale:1,
-                        marginRight:"0vw"
-                    }}
-                    initial={{
-                        scale:0,
-                        marginRight:"-100vh"
-                    }}
-                    transition={{
-                        type:"spring",
-                        stiffness:"100"
-                    }}
-                >
+                    className='details'>
                     <Part/>
                       
                 </motion.div>:""}

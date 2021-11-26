@@ -15,11 +15,7 @@ const Part = () => {
         initial={{
           marginLeft: "-100vw",
         }}
-        transition={{
-          type: "spring",
-          stiffness:800,
-          damping:100
-        }}
+        
       >
         <Card />
       </motion.div>
@@ -33,10 +29,9 @@ const Part = () => {
           marginRight: "-100vw",
         }}
         transition={{
-          type: "spring",
-          stiffness:800,
-          damping:100
+          delay:0.2
         }}
+        
       >
         <SmallCard />
         <SmallCard />
