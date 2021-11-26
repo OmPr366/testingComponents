@@ -1,14 +1,21 @@
 .myAccord{
-    width: 95%;
+    width: 100%;
     background-color: rgb(70, 68, 68);
     padding: 1rem 2rem;
 }
 .myAccord .title{
-    background-color: rgb(145, 127, 127);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(154, 223, 160);
 }
 
 .details{
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
+}
+
+.accord{
+    
+    margin-top: 1rem;
 }

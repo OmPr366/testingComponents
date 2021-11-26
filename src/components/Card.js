@@ -3,7 +3,10 @@ import './Card.css'
 
 const Card = () => {
   return (
-    <div className="card">
+    <div 
+      className="card"
+      
+    >
       <div className="circleBorder">
         <div className="cardImage"></div>
       </div>

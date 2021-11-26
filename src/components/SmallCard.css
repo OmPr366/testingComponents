@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 4rem;
+    padding-bottom: 49px;
     /* margin-left: 20rem; */
 }
 
@@ -41,13 +41,14 @@
 }
 
 .smallCardName {
-    color: white;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    color: #fff;
+    background: linear-gradient(180deg, transparent, #000);
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 37px;
+    width: 100%;
 }
 
 .smallCardIcon {
