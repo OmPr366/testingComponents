@@ -34,7 +34,7 @@ const SelfAcc = () => {
             <div className='accord accord1'>
                 <div className='title'  >
                     <div className='titleName font-bold'>Web Devlopment</div>
-                    <div className='accordIcon' onClick={()=>setAccVal("one",!allAcc.one)}> {allAcc.one?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
+                    <div className='accordIcon cursor-pointer' onClick={()=>setAccVal("one",!allAcc.one)}> {allAcc.one?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
                 </div>
              
                 {allAcc.one? 
@@ -62,7 +62,7 @@ const SelfAcc = () => {
             <div className='accord accord2'>
                 <div className='title'  >
                     <div className='titleName font-bold'>Web Devlopment</div>
-                    <div className='accordIcon' onClick={()=>setAccVal("two",!allAcc.two)}> {allAcc.two?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
+                    <div className='accordIcon cursor-pointer'  onClick={()=>setAccVal("two",!allAcc.two)}> {allAcc.two?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
                 </div>
              
                 {allAcc.two? 
@@ -90,7 +90,7 @@ const SelfAcc = () => {
             <div className='accord accord3'>
                 <div className='title'  >
                     <div className='titleName font-bold'>Web Devlopment</div>
-                    <div className='accordIcon' onClick={()=>setAccVal("three",!allAcc.three)}> {allAcc.three?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
+                    <div className='accordIcon cursor-pointer' onClick={()=>setAccVal("three",!allAcc.three)}> {allAcc.three?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
                 </div>
              
                 {allAcc.three? 
