@@ -13,3 +13,6 @@
     overflow: hidden;
     overflow-y: scroll;
 }
+.allMembers::-webkit-scrollbar {
+    display: none;
+  }
