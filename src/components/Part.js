@@ -15,6 +15,9 @@ const Part = () => {
         initial={{
           marginLeft: "-100vw",
         }}
+        transition={{
+          delay:0
+        }}
         
       >
         <Card />

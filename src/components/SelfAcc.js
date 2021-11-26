@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './SelfAcc.css'
 import { motion } from 'framer-motion'
 import Card from './Card'
@@ -8,9 +8,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 const SelfAcc = () => {
-    const [clicked, setClicked] = useState(0)
+    const [count, setCount] = useState(0);
     const [allAcc, setAllAcc] = useState({
-        one:1,
+        one:0,
         two:0,
         three:0,
         four:0
@@ -29,9 +29,35 @@ const SelfAcc = () => {
             [key] : value
         })
     }
+    useEffect(() => {
+        if(count==0){
+        setTimeout(() => {
+            
+            setAllAcc({
+                one:1,
+            two:0,
+            three:0,
+            four:0
+            })
+            setCount(1);
+        }, 1500);
+    }
+    })
     return (
         <div className='myAccord'>
-            <div className='accord accord1'>
+            <motion.div 
+                className='accord accord1'
+                animate={{
+                    
+                    marginTop:"1rem"
+                }}
+                initial={{
+                    marginTop:"-100vh"
+                }}
+                transition={{
+                    delay:0.8
+                }}
+            >
                 <div className='title rounded-2xl '  >
                     <div className='titleName font-bold'>Web Devlopment</div>
                     <div className='accordIcon cursor-pointer  ' onClick={()=>setAccVal("one",!allAcc.one)}> {allAcc.one?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
@@ -56,10 +82,21 @@ const SelfAcc = () => {
                     <Part/>
                       
                 </motion.div>:""}
-            </div> 
+            </motion.div> 
 
             {/* Accord 2 */}
-            <div className='accord accord2'>
+            <motion.div 
+                className='accord accord2'
+                animate={{
+                    marginTop:"1rem"
+                }}
+                initial={{
+                    marginTop:"-100vh"
+                }}
+                transition={{
+                    delay:0.8
+                }}
+            >
                 <div className='title rounded-2xl'  >
                     <div className='titleName font-bold'>Web Devlopment</div>
                     <div className='accordIcon cursor-pointer'  onClick={()=>setAccVal("two",!allAcc.two)}> {allAcc.two?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
@@ -73,10 +110,21 @@ const SelfAcc = () => {
                     <Part/>
                       
                 </motion.div>:""}
-            </div> 
+            </motion.div> 
 
             {/* Accord 3 */}
-            <div className='accord accord3'>
+            <motion.div 
+                className='accord accord3'
+                animate={{
+                    marginTop:"1rem"
+                }}
+                initial={{
+                    marginTop:"-100vh"
+                }}
+                transition={{
+                    delay:0.5
+                }}
+            >
                 <div className='title rounded-2xl'  >
                     <div className='titleName font-bold'>Web Devlopment</div>
                     <div className='accordIcon cursor-pointer' onClick={()=>setAccVal("three",!allAcc.three)}> {allAcc.three?<KeyboardArrowUpIcon/>:<KeyboardArrowDownIcon/>}</div>
@@ -88,7 +136,7 @@ const SelfAcc = () => {
                     <Part/>
                       
                 </motion.div>:""}
-            </div> 
+            </motion.div> 
         </div>
     )
 }
