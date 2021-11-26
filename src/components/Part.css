@@ -1,0 +1,15 @@
+.webAccord{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+}
+.allMembers{
+    margin-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 510px;
+    width: 800px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
