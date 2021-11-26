@@ -10,7 +10,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 
 const SmallCard = () => {
   return (
-    <div className="smallCard">
+    <motion.div className="smallCard"
+      whileHover={{
+        border: "5px solid #12B6EB",
+      }}
+    >
       <motion.div
         className="socialDetails"
         animate={{
@@ -22,7 +26,8 @@ const SmallCard = () => {
         }}
         whileHover={{
           opacity: 2.2,
-          scale: 1 
+          scale: 1 ,
+          
         }}
         
         // onHoverStart={() => {
@@ -61,7 +66,7 @@ const SmallCard = () => {
         </div>
       </motion.div>
       <div className="smallCardName">Om Prakash</div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -37,14 +37,28 @@
     /* right: 20.27%; */
     /* top: 7.11%; */
     /* bottom: 53.74%; */
-  
+    /* background: linear-gradient(27.27deg, #2EA35D 15.07%, rgba(82, 211, 190, 0.47) 81.84%); */
     border: 5px dashed #12B6EB;
+    border: 3px dashed #2EA35D;
+
     box-sizing: border-box;
   
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 42px;
+
+    animation: rotate 60s linear infinite;
+  }
+
+  @keyframes rotate {
+    0%{
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(0deg);
+
+    }
   }
   
   .cardImage {
@@ -81,7 +95,7 @@
   
   .cardSmallTitles {
     display: flex;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     margin-left: -98px;
   }
   

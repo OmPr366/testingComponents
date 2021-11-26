@@ -1,5 +1,10 @@
 import React from "react";
 import './Card.css'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Card = () => {
   return (
@@ -14,20 +19,20 @@ const Card = () => {
       <div className="cardTitle">UI / UX & Graphic design Team Lead</div>
       <div className="cardSocial">
         <a>
-          <box-icon type="logo" name="github"></box-icon>
+          <GitHubIcon/>
         </a>
 
         <a>
-          <box-icon name="instagram-alt" type="logo"></box-icon>
+          <InstagramIcon/>
         </a>
         <a>
-          <box-icon name="twitter" type="logo"></box-icon>
+          <TwitterIcon/>
         </a>
         <a>
-          <box-icon type="logo" name="linkedin-square"></box-icon>
+          <LinkedInIcon/>
         </a>
         <a>
-          <box-icon type="logo" name="github"></box-icon>
+          <FacebookIcon/>
         </a>    
       </div>
 
