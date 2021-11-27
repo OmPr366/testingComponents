@@ -3,8 +3,8 @@ import "./App.css";
 import Card from "./components/Card";
 import SmallCard from "./components/SmallCard";
 import SelfAcc from "./components/SelfAcc";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useLocation } from "react-router";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { Nav } from "./components/Nav";
 import { Page2 } from "./components/Page2";
 import { Page3 } from "./components/Page3";
@@ -15,8 +15,9 @@ function App() {
     <AnimatePresence exitBeforeEnter >
     <div className="App">
       <Router>
-        <Nav /> 
-        <Switch >
+        <Nav />  
+        <Switch>
+                 
           <Route path="/page3">
             <Page3/>
           </Route>
