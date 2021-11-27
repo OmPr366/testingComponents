@@ -6,7 +6,7 @@ import {
 
 export const Nav = () => {
     return (
-        <div className='nav w-96 flex justify-around p-2 list-none justify-center m-auto cursor-pointer'>
+        <div className='nav w-96 flex justify-around p-2 list-none justify-center m-auto cursor-pointer bg-gray-100 '>
             <li><Link to="/"> Home</Link></li>
             <li><Link to="/page2">About </Link></li>
             <li><Link to="/page3">Services</Link></li>

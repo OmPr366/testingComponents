@@ -12,7 +12,7 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter >
     <div className="App">
       <Router>
         <Nav /> 
