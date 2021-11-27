@@ -55,7 +55,7 @@ const SelfAcc = () => {
                     marginTop:"-100vh"
                 }}
                 transition={{
-                    delay:0.8
+                    delay:0.5
                 }}
             >
                 <div className='title rounded-2xl '  >
@@ -94,7 +94,7 @@ const SelfAcc = () => {
                     marginTop:"-100vh"
                 }}
                 transition={{
-                    delay:0.8
+                    delay:0.4
                 }}
             >
                 <div className='title rounded-2xl'  >
@@ -122,7 +122,7 @@ const SelfAcc = () => {
                     marginTop:"-100vh"
                 }}
                 transition={{
-                    delay:0.5
+                    delay:0.2
                 }}
             >
                 <div className='title rounded-2xl'  >

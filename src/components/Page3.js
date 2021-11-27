@@ -5,14 +5,24 @@ export const Page3 = () => {
     return (
         <motion.div className='w-full  bg-blue-200 flex flex-col  items-center p-2'
         initial={{
-            opacity:0
+            marginLeft:"-100vw",
+            // scale:0
         }}
             animate={{
-                opacity:1
+                marginLeft:0,
+                // scale:1
             }}
             exit={{
-                opacity:0
+                marginTop:"-800vh",
+                marginLeft:"80vw",
+                scale:0
+
             }}
+            transition={{
+                type:"spring",
+                stiffness:100,
+            }}
+
         >
             <div className=' w-44 h-60  bg-red-400 my-5  '>
 
